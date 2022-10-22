@@ -1,0 +1,13 @@
+$$
+\catcode`\_=12
+\catcode`\#=12
+
+\newread\file
+\openin\file=/flag2
+\loop\unless\ifeof\file
+\read\file to\fileline 
+{\fileline}
+\repeat
+\closein\file
+
+$$
